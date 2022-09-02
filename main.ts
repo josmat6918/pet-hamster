@@ -88,5 +88,6 @@ basic.forever(function () {
     }
 })
 basic.forever(function () {
-    music.playMelody("E A E G A F C5 C ", 120)
+    music.playMelody("C5 B A G F E D C ", 120)
+    music.playMelody("C D E F G A B C5 ", 120)
 })
