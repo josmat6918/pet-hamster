@@ -1,0 +1,49 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="t/XD3ZA:SXExa6iVBL~p">Health</variable></variables><block type="device_forever" id="*6K*TeETjfx0{(W=7({u" x="-674" y="-247"><statement name="HANDLER"><block type="device_show_leds" id="J={K}?^L[E2`s|%p3JJ!"><field name="LEDS">`
+        . . . . . 
+        . . . . # 
+        . # # # . 
+        . # . # . 
+        . # . # .
+        `</field><next><block type="device_show_leds" id="fL]0+N!B/K[6M9X!j$8z"><field name="LEDS">`
+        . . . . . 
+        . . . . # 
+        . # # # . 
+        . # . # . 
+        . # . . #
+        `</field><next><block type="device_show_leds" id="Nbu7WI4/z4-/-|]eBDYe"><field name="LEDS">`
+        . . . . . 
+        . . . . . 
+        . . # # # 
+        . . # . # 
+        . . # . #
+        `</field><next><block type="device_show_leds" id="2!eNKg|~b0:UK5PEr}3+"><field name="LEDS">`
+        . . . . . 
+        . # . . . 
+        . . # # # 
+        . . # . # 
+        . . # . #
+        `</field><next><block type="device_show_leds" id="n_?X0dv/Nf4wh^j@spu)"><field name="LEDS">`
+        . . . . . 
+        . # . . . 
+        . . # # # 
+        . . # . # 
+        . # . . #
+        `</field><next><block type="device_show_leds" id="-/{0mDwFZ7p=[QYXWy[P"><field name="LEDS">`
+        . . . . . 
+        # . . . . 
+        . # # # . 
+        . # . # . 
+        # . . # .
+        `</field><next><block type="device_show_leds" id="X=/CG3b!+W$eq`zgp:eu"><field name="LEDS">`
+        . . . . . 
+        . . . . . 
+        # # # . . 
+        # . # . . 
+        # . # . .
+        `</field><next><block type="controls_if" id="u5hV7p`k*.kzFHp)TfV~"><value name="IF0"><shadow type="logic_boolean" disabled="true"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id="kdEfFqc36O)t$d+jIZT["><field name="OP">EQ</field><value name="A"><shadow type="math_number" disabled="true"><field name="NUM">0</field></shadow><block type="variables_get" id="]qcH#D?f`?hHbwgi%-5:"><field name="VAR" id="t/XD3ZA:SXExa6iVBL~p">Health</field></block></value><value name="B"><shadow type="math_number" id="bhDf3ple??mAAu==):QG"><field name="NUM">0</field></shadow></value></block></value><statement name="DO0"><block type="device_show_leds" id="9_Kk|5GyFXoUnV`$b2`d"><field name="LEDS">`
+        . . . . . 
+        . . . . . 
+        . # . # . 
+        . # . # . 
+        . # # # #
+        `</field><next><block type="device_pause" id="-*rOi2Sw;zp!UFpnSUIo"><value name="pause"><shadow type="timePicker" id="Jn02-e*sAf/,QO(`mDS4"><field name="ms">3000</field></shadow></value><next><block type="device_print_message" id=".e*yO[#++FeD4i^C_CnT"><value name="text"><shadow type="text" id="wD9cgk8SN^06Wf9Pho%C"><field name="TEXT">YourPetIsDead</field></shadow></value></block></next></block></next></block></statement></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></statement></block><block type="device_button_event" id="CB`]*Go$}w;-8K3U124#" x="-415" y="-198"><field name="NAME">Button.A</field><statement name="HANDLER"><block type="variables_change" id="HPI3fQ={tfSj)9w,8UKm"><field name="VAR" id="t/XD3ZA:SXExa6iVBL~p">Health</field><value name="VALUE"><shadow type="math_number" id="[|2TXrfx[_m=Ehn^eU%J"><field name="NUM">2</field></shadow></value><next><block type="basic_show_icon" id=".MfK`aJr9`ETda=b6#`}"><field name="i">IconNames.Heart</field></block></next></block></statement></block><block type="pxt-on-start" id="W]@;jadP3Dc.viLPT{0+" x="4" y="-214"><statement name="HANDLER"><block type="variables_set" id="O|ohxqN|RnD~C|u8$`%q"><field name="VAR" id="t/XD3ZA:SXExa6iVBL~p">Health</field><value name="VALUE"><shadow type="math_number" id="H9/LXIY.EOK$JznT(tQE"><field name="NUM">200</field></shadow></value><next><block type="basic_show_icon" id="{!@Pg1LAHxYI6@-iMaRH"><field name="i">IconNames.Asleep</field></block></next></block></statement></block><block type="device_button_event" id="[rt4-FGhcXdT/,.@t:7t" x="-418" y="-1"><field name="NAME">Button.B</field><statement name="HANDLER"><block type="variables_change" id="s+E}eWC_6Vp-pi4s]YOO"><field name="VAR" id="t/XD3ZA:SXExa6iVBL~p">Health</field><value name="VALUE"><shadow type="math_number" id="NE2.CNzXgp~CL}[hu(|l"><field name="NUM">-5</field></shadow></value><next><block type="basic_show_icon" id="JnKde~h+L8Ye*X)H6f(w"><field name="i">IconNames.Sad</field></block></next></block></statement></block><block type="device_forever" id="|%An4%}w#$TYH.PjK|^r" x="0" y="0"><statement name="HANDLER"><block type="playMelody" id="6/P+6Pj|1PJ7r[Z4HqJ3"><value name="melody"><shadow type="melody_editor" id="htTq)xnJ}zx3%M%+imoA"><field name="melody">"E A E G A F C5 C "</field></shadow></value><value name="tempo"><shadow type="math_number_minmax" id="mc6vc8iCIE4bJ^Hz_PnD"><mutation min="40" max="500" label="Tempo" precision="0"></mutation><field name="SLIDER">120</field></shadow></value></block></statement></block><block type="every_interval" id="LVsL=F5l@Lyq:(Lbf-H/" x="10" y="173"><value name="interval"><shadow type="longTimePicker" id="T+;v2KNmBhFy0@nfkkUb"><field name="ms">2000</field></shadow></value><statement name="HANDLER"><block type="variables_change" id="*m}1au$B2~p85Iwi043("><field name="VAR" id="t/XD3ZA:SXExa6iVBL~p">Health</field><value name="VALUE"><shadow type="math_number" id="e9IaW}bSkC9Hzf+rZK_l"><field name="NUM">-2</field></shadow></value></block></statement></block><block type="device_button_event" id="ts)f{hA7U(ngL;[~Qf_P" x="-416" y="197"><field name="NAME">Button.AB</field><statement name="HANDLER"><block type="device_show_number" id="z*;RV[a|!)vbIpsDeW1M"><value name="number"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="variables_get" id="E@R?oDFyfUgl~uH=D/:}"><field name="VAR" id="t/XD3ZA:SXExa6iVBL~p">Health</field></block></value></block></statement></block><block type="input_logo_event" id="f.`=jxN4gSwEL33Yayy[" x="-418" y="337"><field name="action">TouchButtonEvent.Pressed</field><statement name="HANDLER"><block type="basic_show_icon" id="UwVZ#T4A]#7?:j+^=y7s"><field name="i">IconNames.Happy</field><next><block type="SoundExpression_playUntilDone" id="]e~.l#*RgB9L[PsCj4{H"><field name="this">soundExpression.giggle</field><next><block type="basic_show_icon" id="R53OY]^81Y{U/Zy4dC7Q"><field name="i">IconNames.Asleep</field></block></next></block></next></block></statement></block><block type="device_gesture_event" id=".nI_QM+zCU?W%8eNQ)9o" x="-425" y="600"><field name="NAME">Gesture.Shake</field><statement name="HANDLER"><block type="basic_show_icon" id="HaTeCZ*qc)GYG3+dH)3f"><field name="i">IconNames.Sad</field><next><block type="SoundExpression_playUntilDone" id="zq#fR[]*RHbOSYC+sf!c"><field name="this">soundExpression.sad</field><next><block type="basic_show_icon" id="DQJlu6qQRRyv?U7iK@Yn"><field name="i">IconNames.Asleep</field></block></next></block></next></block></statement></block></xml>
